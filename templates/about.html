@@ -1,0 +1,6 @@
+{%extends 'base.html'%} {% load static %} {%block title%} About {%endblock title%} {% block contant %}
+
+<h1 class="text-center">{{ title }}</h1>
+<hr>
+<p>{{ Description }}</p><br>
+<img src="{% static '/web.jpg' %}" alt="mypicture" style="width: 400px; height: 400px;"> {% endblock contant %}

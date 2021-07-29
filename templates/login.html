@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %} Login Page{% endblock title %} {% block contant%}
+
+<div class="container col-md-4 offset-4 mt-5">
+    <form action="" method="POST" class="from-group">
+        {%csrf_token%}
+
+        <h3 class="text-center">Login Form</h3>
+        <hr><br>
+        <input type="text" class="form-control" name="username" id="" placeholder="Enter Your Username:"><br>
+        <input type="password" class="form-control" name="password" id="" placeholder="Enter Your password"><br>
+        <input type="submit" class="btn btn-info w-100" value="Login">
+    </form>
+
+</div>
+{% endblock contant%}
